@@ -1,0 +1,9 @@
+c:\users\gyrth\documents\visual studio 2013\Projects\HP_Calculator\HP_Calculator\bin\Debug\HP_Calculator.exe.config
+c:\users\gyrth\documents\visual studio 2013\Projects\HP_Calculator\HP_Calculator\bin\Debug\HP_Calculator.exe
+c:\users\gyrth\documents\visual studio 2013\Projects\HP_Calculator\HP_Calculator\bin\Debug\HP_Calculator.pdb
+c:\users\gyrth\documents\visual studio 2013\Projects\HP_Calculator\HP_Calculator\obj\Debug\HP_Calculator.csprojResolveAssemblyReference.cache
+c:\users\gyrth\documents\visual studio 2013\Projects\HP_Calculator\HP_Calculator\obj\Debug\HP_Calculator.Form1.resources
+c:\users\gyrth\documents\visual studio 2013\Projects\HP_Calculator\HP_Calculator\obj\Debug\HP_Calculator.Properties.Resources.resources
+c:\users\gyrth\documents\visual studio 2013\Projects\HP_Calculator\HP_Calculator\obj\Debug\HP_Calculator.csproj.GenerateResource.Cache
+c:\users\gyrth\documents\visual studio 2013\Projects\HP_Calculator\HP_Calculator\obj\Debug\HP_Calculator.exe
+c:\users\gyrth\documents\visual studio 2013\Projects\HP_Calculator\HP_Calculator\obj\Debug\HP_Calculator.pdb

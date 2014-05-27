@@ -7,3 +7,6 @@ c:\users\gyrth\documents\visual studio 2013\Projects\HP_Calculator\HP_Calculator
 c:\users\gyrth\documents\visual studio 2013\Projects\HP_Calculator\HP_Calculator\obj\Debug\HP_Calculator.csproj.GenerateResource.Cache
 c:\users\gyrth\documents\visual studio 2013\Projects\HP_Calculator\HP_Calculator\obj\Debug\HP_Calculator.exe
 c:\users\gyrth\documents\visual studio 2013\Projects\HP_Calculator\HP_Calculator\obj\Debug\HP_Calculator.pdb
+C:\Users\Hendrik\Documents\HPCalc\trunk\HP_Calculator\bin\Debug\HP_Calculator.exe.config
+C:\Users\Hendrik\Documents\HPCalc\trunk\HP_Calculator\obj\Debug\HP_Calculator.exe
+C:\Users\Hendrik\Documents\HPCalc\trunk\HP_Calculator\obj\Debug\HP_Calculator.pdb

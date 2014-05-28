@@ -83,5 +83,10 @@ namespace HP_Calculator
         {
             textBox1.Text += button9.Text;
         }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

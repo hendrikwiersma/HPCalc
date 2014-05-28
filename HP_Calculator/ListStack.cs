@@ -2,19 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace HP_Calculator
 {
-    class ArrayStack:Stack
+    class ListStack:Stack
     {
-        private int[] arrayStack = null;
-        private int Pointer;
+        private List<int> listStack = null; //Create an empty List which can hold integers.
 
-        public ArrayStack(Stack b)
+        private int stackPointer;
+
+        public ListStack(Stack b)   //Use my Stack class.
         {
-            arrayStack = new int[10];   //Tis the the Array where the Values will be stored. Max 10 items.
-            Pointer = 0;    //A pointer to keep track of where to Pop or Push the next Value.
+            listStack = new List<int>();    //Constructor for the List.
+            stackPointer = 0;
 
             if (b != null)
             {
@@ -46,31 +46,35 @@ namespace HP_Calculator
 
         public override void Push(int elementToPush)
         {
-            arrayStack[Pointer++] = elementToPush;
+            listStack.Add(elementToPush);
+            stackPointer++;
         }
 
         public override int Pop()
         {
-            return arrayStack[--Pointer];
+            int value;
+            --stackPointer;
+            value = listStack[stackPointer];
+            listStack.Remove(stackPointer);
+            return value;
         }
 
         public override int GetCount()
         {
-            return Pointer;
+            return stackPointer;
         }
 
         public override int GetElementOnNumber(int myElement)
         {
-            if (myElement > Pointer)
+            if (myElement > stackPointer)
             {
                 Console.WriteLine("Huh. The Element Number can't be bigger than the Pointer.\n");
                 return 0;
             }
             else
             {
-                return arrayStack[myElement];
+                return listStack.ElementAt(myElement);
             }
         }
     }
-    }
-
+}

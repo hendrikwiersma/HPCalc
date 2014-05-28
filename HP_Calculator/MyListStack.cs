@@ -2,19 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace HP_Calculator
 {
-    class ArrayStack:Stack
+    class MyListStack : Stack
     {
-        private int[] arrayStack = null;
+        private LinkedList<int> linkedListStack = null;
         private int Pointer;
 
-        public ArrayStack(Stack b)
+        public MyListStack(Stack b)
         {
-            arrayStack = new int[10];   //Tis the the Array where the Values will be stored. Max 10 items.
-            Pointer = 0;    //A pointer to keep track of where to Pop or Push the next Value.
+            linkedListStack = new LinkedList<int>();
+            Pointer = 0;
 
             if (b != null)
             {
@@ -46,17 +45,31 @@ namespace HP_Calculator
 
         public override void Push(int elementToPush)
         {
-            arrayStack[Pointer++] = elementToPush;
+            if (Pointer == 0)
+            {
+                linkedListStack.AddFirst(elementToPush);
+            }
+            else
+            {
+                linkedListStack.AddAfter(linkedListStack.Last, elementToPush);
+            }
+            Pointer++;
         }
 
         public override int Pop()
         {
-            return arrayStack[--Pointer];
+            int value;
+
+            value = linkedListStack.Last.Value;
+            linkedListStack.RemoveLast();
+            Pointer--;
+
+            return value;
         }
 
         public override int GetCount()
         {
-            return Pointer;
+            return linkedListStack.Count();
         }
 
         public override int GetElementOnNumber(int myElement)
@@ -68,9 +81,8 @@ namespace HP_Calculator
             }
             else
             {
-                return arrayStack[myElement];
+                return linkedListStack.ElementAt(myElement);
             }
         }
     }
-    }
-
+}
